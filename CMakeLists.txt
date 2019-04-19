@@ -42,32 +42,32 @@ include_directories(
         ${Boost_INCLUDE_DIRS}
         ${PROTOBUF_INCLUDE_DIRS}
         ${WANGLE_INCLUDE_DIR}
-        ${PROJECT_SOURCE_DIR}/common/include
+        ${PROJECT_SOURCE_DIR}/IM-Common/include
 )
 
-add_subdirectory(common)
+add_subdirectory(IM-Common)
 
 
 ################# test application #############
 add_executable(test-UserInfo test/test-UserInfo.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
-target_link_libraries(test-UserInfo common)
+target_link_libraries(test-UserInfo IM-Common)
 ###
 add_executable(test-proto test/test-proto.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
-target_link_libraries(test-proto common)
+target_link_libraries(test-proto IM-Common)
 
 ### test TrieTree
 add_executable(test-TrieTree test/test-TrieTree.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
-target_link_libraries(test-TrieTree common)
+target_link_libraries(test-TrieTree IM-Common)
 
 ### test SortArrayMap
 add_executable(test-SortArrayMap test/test-SortArrayMap.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
-target_link_libraries(test-SortArrayMap common)
+target_link_libraries(test-SortArrayMap IM-Common)
 
 ### test ConsistentHash
 add_executable(test-ConsistentHash test/test-ConsistentHash.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
-target_link_libraries(test-ConsistentHash common)
+target_link_libraries(test-ConsistentHash IM-Common)
