@@ -15,7 +15,9 @@ add_library(common
 
         RouteAlgorithm/ConsistentHash/TreeMapConsistentHash.cpp
         RouteAlgorithm/ConsistentHash/SortArrayMapConsistentHash.cpp
-        RouteAlgorithm/ConsistentHash/ConsistentHashHandle.cpp RouteAlgorithm/Random/RandomHandle.cpp RouteAlgorithm/Random/RandomHandle.h)
+        RouteAlgorithm/ConsistentHash/ConsistentHashHandle.cpp
+
+        RouteAlgorithm/Random/RandomHandle.cpp )
 
 target_link_libraries(common
         ${PROTOBUF_LIBRARIES}
