@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package protocol;
+
+message CIMResponse {
+    required int64 responseId = 2;
+    required string resMsg = 1;
+    required int32 type = 3;
+}
