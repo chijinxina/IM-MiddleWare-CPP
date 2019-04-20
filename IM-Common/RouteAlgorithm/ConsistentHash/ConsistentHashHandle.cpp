@@ -11,7 +11,7 @@ void ConsistentHashHandle::setHash(std::shared_ptr<AbstractConsistentHash> hash)
 }
 
 /*在一批服务器里进行路由*/
-std::string ConsistentHashHandle::routeServer(std::list<std::string> &values, std::string key)
+std::string ConsistentHashHandle::routeServer(std::vector<std::string> &values, std::string key)
 {
     return consistentHashPtr_->process(values, key);
 }

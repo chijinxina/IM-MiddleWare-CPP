@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.0.2)
 
 
 add_library(IM-Common
+
         util/md5.cpp
+        util/randnum.cpp
 
         DataConstruct/SortArrayMap.cpp
         DataConstruct/TrieTree.cpp
@@ -17,7 +19,9 @@ add_library(IM-Common
         RouteAlgorithm/ConsistentHash/SortArrayMapConsistentHash.cpp
         RouteAlgorithm/ConsistentHash/ConsistentHashHandle.cpp
 
-        RouteAlgorithm/Random/RandomHandle.cpp )
+        RouteAlgorithm/Random/RandomHandle.cpp
+        RouteAlgorithm/Loop/LoopHandle.cpp
+        )
 
 target_link_libraries(IM-Common
         ${PROTOBUF_LIBRARIES}

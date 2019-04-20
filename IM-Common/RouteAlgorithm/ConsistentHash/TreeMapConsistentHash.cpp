@@ -3,7 +3,6 @@
 //
 #include <iostream>
 #include <sstream>
-#include <RouteAlgorithm/ConsistentHash/TreeMapConsistentHash.h>
 
 #include "RouteAlgorithm/ConsistentHash/AbstractConsistentHash.h"
 #include "RouteAlgorithm/ConsistentHash/TreeMapConsistentHash.h"

@@ -6,7 +6,7 @@
 #define CIM_CPP_ABSTRACTCONSISTENTHASH_H
 
 #include <string>
-#include <list>
+#include <vector>
 #include <functional>
 #include "util/md5.h"
 
@@ -54,7 +54,7 @@ public:
     }
 
     /*传入节点列表以及客户端信息获取一个服务节点*/
-    virtual std::string process(std::list<std::string> &values, std::string key)
+    virtual std::string process(std::vector<std::string> &values, std::string key)
     {
         for(std::string x : values)
         {

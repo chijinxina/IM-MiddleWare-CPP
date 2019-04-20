@@ -6,11 +6,12 @@
 #define CIM_CPP_ROUTEHANDLE_H
 
 #include <string>
-#include <list>
+#include <vector>
 
 class RouteHandle {
+public:
     /*在一批服务器里进行路由*/
-    virtual std::string routeServer(std::list<std::string> &values, std::string key) = 0;
+    virtual std::string routeServer(std::vector<std::string> &values, std::string key) = 0;
 };
 
 

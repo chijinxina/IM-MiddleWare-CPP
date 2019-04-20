@@ -46,6 +46,7 @@ include_directories(
 )
 
 add_subdirectory(IM-Common)
+add_subdirectory(IM-Route)
 
 
 ################# test application #############
@@ -71,3 +72,8 @@ target_link_libraries(test-SortArrayMap IM-Common)
 add_executable(test-ConsistentHash test/test-ConsistentHash.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 target_link_libraries(test-ConsistentHash IM-Common)
+
+### test random number genrator(thread safe)
+add_executable(test-Randnum test/test-Randnum.cpp)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
+target_link_libraries(test-Randnum IM-Common)

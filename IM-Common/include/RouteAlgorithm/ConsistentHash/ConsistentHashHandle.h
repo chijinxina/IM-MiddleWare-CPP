@@ -12,7 +12,7 @@
 class ConsistentHashHandle : public RouteHandle{
 public:
     /*在一批服务器里进行路由*/
-    std::string routeServer(std::list<std::string> &value, std::string key) override;
+    std::string routeServer(std::vector<std::string> &value, std::string key) override;
 
     /*设置一致性hash求解器*/
     void setHash(std::shared_ptr<AbstractConsistentHash> hash);

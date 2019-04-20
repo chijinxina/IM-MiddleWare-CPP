@@ -4,9 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include <list>
-#include <assert.h>
-
+#include <vector>
 #include "RouteAlgorithm/ConsistentHash/AbstractConsistentHash.h"
 #include "RouteAlgorithm/ConsistentHash/TreeMapConsistentHash.h"
 #include "RouteAlgorithm/ConsistentHash/SortArrayMapConsistentHash.h"
@@ -18,7 +16,7 @@ void getFirstNodeValue1()
 {
     AbstractConsistentHash* map = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     stringstream ss;
     string tmp;
@@ -44,7 +42,7 @@ void getFirstNodeValue2()
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     stringstream ss;
     string tmp;
@@ -74,7 +72,7 @@ void getFirstNodeValue3()
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     stringstream ss;
     string tmp;
@@ -103,7 +101,7 @@ void getFirstNodeValue4()
 {
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
-    list<string> strs;
+    vector<string> strs;
 
     strs.push_back("45.78.28.220:9000:8081");
     strs.push_back("45.78.28.220:9100:9081");
@@ -125,7 +123,7 @@ void getFirstNodeValue5()
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     strs.push_back("45.78.28.220:9000:8081");
     strs.push_back("45.78.28.220:9100:9081");
@@ -149,7 +147,7 @@ void getFirstNodeValue6()
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     strs.push_back("45.78.28.220:9000:8081");
     strs.push_back("45.78.28.220:9100:9081");
@@ -173,7 +171,7 @@ void getFirstNodeValue7()
     AbstractConsistentHash* map1 = new SortArrayMapConsistentHash();
     AbstractConsistentHash* map2 = new TreeMapConsistentHash();
 
-    list<string> strs;
+    vector<string> strs;
 
     strs.push_back("45.78.28.220:9000:8081");
     strs.push_back("45.78.28.220:9100:9081");
