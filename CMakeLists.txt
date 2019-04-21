@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 
-project("CIM-CPP")
+project("IM-MiddleWare-CPP")
 
-add_compile_options(-std=c++11)
+add_compile_options(-std=c++14)
 
 # 添加cmake_modules
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
@@ -77,3 +77,8 @@ target_link_libraries(test-ConsistentHash IM-Common)
 add_executable(test-Randnum test/test-Randnum.cpp)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 target_link_libraries(test-Randnum IM-Common)
+
+### test EvictingCacheMap
+add_executable(test-EvictingCacheMap test/test-EvictingCacheMap.cpp)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
+target_link_libraries(test-EvictingCacheMap ${FOLLY_LIBRARIES})
